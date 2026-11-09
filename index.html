@@ -1,0 +1,570 @@
+ <!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Atlas Imobiliária. Casas de luxo com acompanhamento completo, da visita à escritura, com informação clara e sem surpresas.">
+  <meta name="theme-color" content="#100F0E">
+  <title>Atlas Imobiliária | Casas de luxo com confiança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Atlas Imobiliária, início">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-text">
+          <b>Atlas</b>
+          <small>Imobiliária</small>
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Principal">
+        <a href="#imoveis">Imóveis</a>
+        <a href="#porque">Porquê a Atlas</a>
+        <a href="#como-comprar">Como comprar</a>
+        <a href="#simulador">Crédito</a>
+        <a href="#perguntas">Perguntas</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="#contacto">Marcar visita</a>
+        <div class="nav-foot">
+          <a href="tel:+351210000000">+351 210 000 000</a>
+          <span>Seg.–Sáb. · 10h–19h</span>
+        </div>
+      </nav>
+
+      <div class="header-tools">
+        <button class="tool-button" type="button" data-open-favorites aria-label="Favoritos">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span class="tool-count" data-fav-count>0</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO CAROUSEL ============ -->
+    <section class="hero" id="top" aria-roledescription="carrossel" aria-label="Casas em destaque">
+      <div class="hero-slides" data-slides></div>
+
+      <div class="hero-bar">
+        <div class="hero-dots" data-dots></div>
+        <p class="hero-count" aria-live="off"><b data-current>01</b> / <span data-total>06</span></p>
+        <div class="hero-nav">
+          <button class="round-btn" type="button" data-prev aria-label="Casa anterior">&larr;</button>
+          <button class="round-btn" type="button" data-next aria-label="Casa seguinte">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP (com pesquisa) ============ -->
+    <section class="trust" aria-label="Pesquisar e porque confiar na Atlas">
+      <div class="container">
+        <form class="finder-form" data-search role="search">
+            <label class="field">
+              <span>Localização</span>
+              <select name="city" data-search-city>
+                <option value="">Todas</option>
+                <option>Cascais</option>
+                <option>Lisboa</option>
+                <option>Sesimbra</option>
+                <option>Carvoeiro</option>
+                <option>Peniche</option>
+                <option>Comporta</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Quartos</span>
+              <select name="beds" data-search-beds>
+                <option value="0">Qualquer</option>
+                <option value="3">3 ou mais</option>
+                <option value="4">4 ou mais</option>
+                <option value="5">5 ou mais</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Orçamento máximo <b data-search-budget-label>€4 M</b></span>
+              <input type="range" name="budget" min="1000000" max="4000000" step="50000" value="4000000" data-search-budget>
+            </label>
+            <button class="btn" type="submit">Ver casas</button>
+        </form>
+      </div>
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <strong><span data-count="18">0</span> anos</strong>
+          <span>a mediar imóveis de luxo</span>
+        </div>
+        <div class="trust-item reveal" style="--d:1">
+          <strong><span data-count="240">0</span>+</strong>
+          <span>casas vendidas com acompanhamento completo</span>
+        </div>
+        <div class="trust-item reveal" style="--d:2">
+          <strong>Licenciados</strong>
+          <span>mediador AMI n.º [número a confirmar]</span>
+        </div>
+        <div class="trust-item reveal" style="--d:3">
+          <strong>Sem surpresas</strong>
+          <span>honorários por escrito antes de qualquer visita</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LISTINGS ============ -->
+    <section class="section listings" id="imoveis">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Casas à venda</p>
+            <h2>Cada casa, <em>explicada por inteiro.</em></h2>
+            <p class="lead">Para cada imóvel mostramos o que é, porque se destaca e o que deves verificar antes de decidir. Sem letra pequena.</p>
+            <p class="sample-note">Dados de exemplo. Substituir pelos imóveis reais antes de publicar.</p>
+          </div>
+        </div>
+
+        <div class="listing-tools reveal">
+          <div class="chips" role="group" aria-label="Filtrar por localização" data-chips>
+            <button class="chip is-active" type="button" data-city="">Todas</button>
+            <button class="chip" type="button" data-city="Cascais">Cascais</button>
+            <button class="chip" type="button" data-city="Lisboa">Lisboa</button>
+            <button class="chip" type="button" data-city="Sesimbra">Sesimbra</button>
+            <button class="chip" type="button" data-city="Carvoeiro">Carvoeiro</button>
+            <button class="chip" type="button" data-city="Peniche">Peniche</button>
+            <button class="chip" type="button" data-city="Comporta">Comporta</button>
+          </div>
+          <div class="listing-meta">
+            <div class="result-line">
+              <p class="result-count" aria-live="polite" data-result-count></p>
+              <button class="text-link is-off" type="button" data-clear-filters>Limpar filtros</button>
+            </div>
+            <label class="sort">
+              <span>Ordenar</span>
+              <select data-sort>
+                <option value="default">Destaques</option>
+                <option value="price-asc">Preço: do menor para o maior</option>
+                <option value="price-desc">Preço: do maior para o menor</option>
+                <option value="area-desc">Área: maior primeiro</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <ul class="listing-list" data-listings></ul>
+
+        <div class="empty-state" data-empty hidden>
+          <p>Nenhuma casa corresponde a estes filtros.</p>
+          <button class="btn-ghost dark" type="button" data-reset>Limpar filtros</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="section why" id="porque">
+      <div class="container">
+        <div class="why-grid">
+          <div class="reveal">
+            <p class="eyebrow">Porquê a Atlas</p>
+            <h2>Comprar uma casa é a decisão <em>mais séria</em> da vida. Tratamos dela assim.</h2>
+            <p class="lead">Não vendemos apenas casas. Acompanhamos cada passo com documentos verificados, preços justificados e um interlocutor que responde no próprio dia.</p>
+          </div>
+          <ul class="pillars">
+            <li class="pillar reveal">
+              <span class="pillar-num">01</span>
+              <div>
+                <h3>Documentos verificados antes da visita</h3>
+                <p>Pedimos a certidão predial, a caderneta e a licença de utilização, e revemos tudo contigo antes de marcar.</p>
+              </div>
+            </li>
+            <li class="pillar reveal" style="--d:1">
+              <span class="pillar-num">02</span>
+              <div>
+                <h3>Avaliação independente</h3>
+                <p>Comparamos cada casa com vendas recentes da zona, para saberes se o preço faz sentido.</p>
+              </div>
+            </li>
+            <li class="pillar reveal" style="--d:2">
+              <span class="pillar-num">03</span>
+              <div>
+                <h3>Honorários escritos desde o início</h3>
+                <p>A comissão é indicada por escrito antes de qualquer visita. Não há custos escondidos no fim.</p>
+              </div>
+            </li>
+            <li class="pillar reveal" style="--d:3">
+              <span class="pillar-num">04</span>
+              <div>
+                <h3>Respostas no próprio dia</h3>
+                <p>Se fizeres uma pergunta até às 18h, recebes resposta até ao fim do dia útil seguinte, por escrito ou ao telefone.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO BUY ============ -->
+    <section class="section process" id="como-comprar">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Como comprar</p>
+            <h2>Quatro etapas, <em>sempre com a tua aprovação.</em></h2>
+          </div>
+        </div>
+
+        <div class="stepper reveal">
+          <div class="stepper-tabs" role="tablist" aria-label="Etapas da compra" data-tabs>
+            <button class="step-tab is-active" role="tab" aria-selected="true" aria-controls="step-panel" id="tab-0" type="button" data-tab="0">
+              <span>01</span> Visita e avaliação
+            </button>
+            <button class="step-tab" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-1" type="button" data-tab="1" tabindex="-1">
+              <span>02</span> Verificação documental
+            </button>
+            <button class="step-tab" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-2" type="button" data-tab="2" tabindex="-1">
+              <span>03</span> Contrato-promessa
+            </button>
+            <button class="step-tab" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-3" type="button" data-tab="3" tabindex="-1">
+              <span>04</span> Escritura
+            </button>
+          </div>
+
+          <div class="step-panel" role="tabpanel" id="step-panel" aria-labelledby="tab-0" tabindex="0" data-panel>
+            <h3 data-panel-title>Visita e avaliação</h3>
+            <p data-panel-text>Visitas acompanhadas, com tempo para perguntas. Antes de sairmos, avaliamos o preço da casa com base em vendas recentes da zona.</p>
+            <ul class="panel-points" data-panel-points></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAFETY CHECKLIST ============ -->
+    <section class="section checklist-section" id="checklist">
+      <div class="container checklist-grid">
+        <div class="reveal">
+          <p class="eyebrow">Antes de assinar</p>
+          <h2>A lista que ninguém devia dispensar.</h2>
+          <p class="lead">Marca cada item à medida que o confirmas. A tua lista fica guardada neste dispositivo, para continuares mais tarde.</p>
+
+          <div class="progress-card">
+            <div class="progress-head">
+              <span>Progresso</span>
+              <strong data-check-label>0 de 6</strong>
+            </div>
+            <div class="progress-track"><i data-check-bar></i></div>
+            <button class="btn-ghost dark small" type="button" data-check-reset>Recomeçar lista</button>
+          </div>
+        </div>
+
+        <ul class="checklist reveal" style="--d:1" data-checklist>
+          <li><label><input type="checkbox" data-check="0"><span>Certidão permanente da conservatória atualizada</span></label></li>
+          <li><label><input type="checkbox" data-check="1"><span>Caderneta predial e valor patrimonial confirmados</span></label></li>
+          <li><label><input type="checkbox" data-check="2"><span>Licença de utilização e certificado energético</span></label></li>
+          <li><label><input type="checkbox" data-check="3"><span>Servidões, hipotecas e penhoras verificadas</span></label></li>
+          <li><label><input type="checkbox" data-check="4"><span>IMI e condomínio pagos até à data</span></label></li>
+          <li><label><input type="checkbox" data-check="5"><span>Condições do sinal e data da escritura por escrito</span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ MORTGAGE SIMULATOR ============ -->
+    <section class="section simulator" id="simulador">
+      <div class="container simulator-grid">
+        <div class="reveal">
+          <p class="eyebrow">Simulador de crédito</p>
+          <h2>Quanto ficaria <em>por mês?</em></h2>
+          <p class="lead">Escolhe uma casa ou ajusta os valores. O resultado é uma estimativa indicativa, não uma proposta de crédito. Para um valor real, fala com o teu banco ou com um intermediário de crédito.</p>
+
+          <label class="field">
+            <span>Casa de referência</span>
+            <select data-sim-house></select>
+          </label>
+        </div>
+
+        <div class="sim-card reveal" style="--d:1">
+          <div class="sim-inputs">
+            <label class="field">
+              <span>Preço <b data-sim-price-label></b></span>
+              <input type="range" min="500000" max="4000000" step="10000" data-sim-price>
+            </label>
+            <label class="field">
+              <span>Entrada <b data-sim-down-label></b></span>
+              <input type="range" min="10" max="50" step="1" value="20" data-sim-down>
+            </label>
+            <label class="field">
+              <span>Prazo <b data-sim-years-label></b></span>
+              <input type="range" min="5" max="40" step="1" value="30" data-sim-years>
+            </label>
+            <label class="field">
+              <span>Taxa anual indicativa <b data-sim-rate-label></b></span>
+              <input type="range" min="1" max="7" step="0.1" value="3.5" data-sim-rate>
+            </label>
+          </div>
+
+          <div class="sim-result">
+            <p class="sim-label">Prestação mensal estimada</p>
+            <p class="sim-monthly" data-sim-monthly aria-live="polite">—</p>
+            <div class="sim-split" aria-hidden="true"><i data-sim-capital></i><i data-sim-interest></i></div>
+            <div class="sim-legend">
+              <span><i class="dot dot-capital"></i>Capital</span>
+              <span><i class="dot dot-interest"></i>Juros totais</span>
+            </div>
+            <dl class="sim-totals">
+              <div><dt>Montante financiado</dt><dd data-sim-loan>—</dd></div>
+              <div><dt>Total pago ao fim do prazo</dt><dd data-sim-total>—</dd></div>
+            </dl>
+            <p class="disclaimer">Estimativa sem seguros, comissões ou spreads. Não constitui aconselhamento financeiro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUESTIONS ============ -->
+    <section class="section questions" id="perguntas">
+      <div class="container questions-grid">
+        <div class="reveal">
+          <p class="eyebrow">Perguntas</p>
+          <h2>Tens uma dúvida? <em>Pergunta aqui.</em></h2>
+          <p class="lead">Escreve a tua pergunta com as tuas palavras. Procuramos a resposta mais próxima nas perguntas frequentes e, se não a encontrarmos, enviamos a dúvida a um consultor.</p>
+
+          <form class="ask" data-ask role="search">
+            <label class="field">
+              <span>A tua pergunta</span>
+              <input type="text" placeholder="Ex.: posso pagar o sinal com cartão?" data-ask-input maxlength="200">
+            </label>
+            <button class="btn" type="submit">Procurar resposta</button>
+          </form>
+          <p class="ask-answer" data-ask-answer aria-live="polite"></p>
+        </div>
+
+        <div class="accordion reveal" style="--d:1" data-faq>
+          <details open data-kw="sinal pagamento cartao transferencia">
+            <summary>Como funciona o sinal na compra de uma casa?</summary>
+            <p>O sinal é entregue ao assinar o contrato-promessa, normalmente entre 10% e 20% do preço, mediante transferência bancária. Nunca pagamos sinal em dinheiro. Tudo fica indicado no contrato, incluindo a data da escritura e o que acontece em caso de desistência.</p>
+          </details>
+          <details data-kw="documentos certidao caderneta verificar legal">
+            <summary>Que documentos devo pedir antes de visitar?</summary>
+            <p>Pedimos a certidão permanente, a caderneta predial e a licença de utilização antes de qualquer visita. Se algum documento não estiver disponível, dizemos-te logo e explicamos o que isso significa para a compra.</p>
+          </details>
+          <details data-kw="comissao honorarios custo preco taxa">
+            <summary>Quanto custa a intermediação?</summary>
+            <p>Os honorários são indicados por escrito antes da primeira visita, numa percentagem clara do preço de venda. Não cobramos taxas de visita nem custos de documentação escondidos.</p>
+          </details>
+          <details data-kw="credito banco hipoteca financiamento prestacao">
+            <summary>Posso ajudar com o crédito à habitação?</summary>
+            <p>Sim. Temos parceiros de intermediação de crédito e podemos apresentar-te a várias propostas. Usa o simulador como ponto de partida, mas a proposta final depende da análise do banco.</p>
+          </details>
+          <details data-kw="visita agendar marcar horario">
+            <summary>Como marco uma visita?</summary>
+            <p>Escolhe a casa, a data e a hora no formulário de contacto, ou liga-nos. Confirmamos por email ou telefone em menos de duas horas, durante o horário de atendimento.</p>
+          </details>
+          <details data-kw="garantia devolucao desistir arrependimento">
+            <summary>E se mudar de ideias depois do sinal?</summary>
+            <p>Depende do que ficar escrito no contrato-promessa. Explicamos as condições de devolução ou perda do sinal antes de assinares, para que a decisão seja tua e informada.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" id="testemunhos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Testemunhos</p>
+            <h2>Quem já comprou <em>com a Atlas.</em></h2>
+          </div>
+        </div>
+        <!-- PLACEHOLDER: substituir por testemunhos reais e autorizados. Não publicar textos inventados. -->
+        <div class="quotes reveal">
+          <blockquote>[Testemunho de cliente. Substituir por uma opinião real e autorizada.]</blockquote>
+          <cite>[Nome, cidade, casa adquirida]</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Marca a tua visita <em>em dois minutos.</em></h2>
+          <p class="lead">Escolhe a casa, o dia e a hora. Confirmamos por email ou telefone, e tudo fica registado.</p>
+
+          <ul class="contact-list">
+            <li><span>Morada</span> Avenida da Liberdade, [número], Lisboa</li>
+            <li><span>Telefone</span> <a href="tel:+351210000000">+351 210 000 000</a></li>
+            <li><span>Email</span> <a href="mailto:geral@atlasimobiliaria.pt">geral@atlasimobiliaria.pt</a></li>
+            <li><span>Horário</span> Segunda a sexta, 10h–19h · Sábado, 10h–13h</li>
+          </ul>
+        </div>
+
+        <form class="visit-form reveal" style="--d:1" data-visit novalidate>
+          <h3>Pedir visita</h3>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="v-name">Nome</label>
+              <input id="v-name" name="name" type="text" autocomplete="name" required>
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="v-contact">Email ou telefone</label>
+              <input id="v-contact" name="contact" type="text" autocomplete="email" required>
+              <small class="error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="v-house">Casa</label>
+            <select id="v-house" name="house" data-visit-house required></select>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="v-date">Dia</label>
+              <input id="v-date" name="date" type="date" required>
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="v-time">Hora</label>
+              <select id="v-time" name="time" required>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="v-msg">Mensagem <small>(opcional)</small></label>
+            <textarea id="v-msg" name="message" rows="3" maxlength="500" placeholder="Algo que queiras saber antes da visita?"></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>Aceito que a Atlas Imobiliária trate estes dados para contactar-me sobre a visita, nos termos da política de privacidade.</span>
+          </label>
+          <small class="error consent-error" aria-live="polite"></small>
+
+          <button class="btn submit" type="submit">Pedir visita</button>
+          <p class="form-note" role="status" data-visit-note></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ÁREA RESERVADA: próximas secções (galeria de plantas, bairro, vídeo das casas) -->
+
+  </main>
+
+  <!-- ============ FIXED COMPARE TRAY ============ -->
+  <div class="compare-tray" data-tray hidden>
+    <div class="tray-inner">
+      <p><b data-tray-count>0</b> casas selecionadas</p>
+      <div class="tray-chips" data-tray-chips></div>
+      <button class="btn" type="button" data-open-compare>Comparar</button>
+      <button class="tray-clear" type="button" data-clear-compare aria-label="Limpar comparação">&times;</button>
+    </div>
+  </div>
+
+  <!-- ============ HOUSE DETAIL DIALOG ============ -->
+  <dialog class="dialog house-dialog" data-house-dialog aria-labelledby="hd-title">
+    <button class="dialog-close" type="button" aria-label="Fechar" data-close>&times;</button>
+    <div class="house-dialog-grid">
+      <figure class="house-dialog-media"><img src="" alt="" data-hd-img></figure>
+      <div class="house-dialog-body">
+        <p class="eyebrow" data-hd-city></p>
+        <h3 id="hd-title" data-hd-name></h3>
+        <p class="hd-price" data-hd-price></p>
+        <p class="hd-desc" data-hd-desc></p>
+
+        <dl class="specs-grid" data-hd-specs></dl>
+
+        <h4>Porque esta casa</h4>
+        <ul class="why-list" data-hd-why></ul>
+
+        <h4>Inclui</h4>
+        <ul class="feature-tags" data-hd-features></ul>
+
+        <div class="hd-actions">
+          <button class="btn" type="button" data-hd-visit>Pedir visita</button>
+          <button class="btn-ghost dark" type="button" data-hd-fav>Guardar</button>
+          <button class="btn-ghost dark" type="button" data-hd-compare>Comparar</button>
+        </div>
+        <p class="sample-note">Estimativa de crédito disponível no simulador.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============ COMPARE DIALOG ============ -->
+  <dialog class="dialog compare-dialog" data-compare-dialog aria-labelledby="cmp-title">
+    <button class="dialog-close" type="button" aria-label="Fechar" data-close>&times;</button>
+    <h3 id="cmp-title">Comparar casas</h3>
+    <div class="compare-scroll">
+      <table class="compare-table" data-compare-table></table>
+    </div>
+  </dialog>
+
+  <!-- ============ FAVORITES DIALOG ============ -->
+  <dialog class="dialog favorites-dialog" data-fav-dialog aria-labelledby="fav-title">
+    <button class="dialog-close" type="button" aria-label="Fechar" data-close>&times;</button>
+    <h3 id="fav-title">Guardadas</h3>
+    <ul class="fav-list" data-fav-list></ul>
+  </dialog>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text"><b>Atlas</b><small>Imobiliária</small></span>
+        </a>
+        <p class="footer-lead">Casas de luxo, com informação clara e acompanhamento do início ao fim.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h4>Navegar</h4>
+        <a href="#imoveis">Imóveis</a>
+        <a href="#como-comprar">Como comprar</a>
+        <a href="#simulador">Simulador de crédito</a>
+        <a href="#perguntas">Perguntas</a>
+      </nav>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Livro de reclamações</a>
+        <a href="#">Mediador AMI n.º [número a confirmar]</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="tel:+351210000000">+351 210 000 000</a>
+        <a href="mailto:geral@atlasimobiliaria.pt">geral@atlasimobiliaria.pt</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; 2026 Atlas Imobiliária. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
